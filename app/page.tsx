@@ -1,65 +1,147 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import bannerImage from './assets/banner.png';
+import logoImage from './assets/logo.png';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="min-h-screen bg-[#1A1A1A] text-white">
+      {/* Header */}
+      <header className="flex justify-between items-center px-4 py-4 max-w-7xl mx-auto">
+        <div className="flex items-center">
+          <Link href="/" className="hover:opacity-80 transition-opacity">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src={logoImage}
+              alt="Sweatchi logo"
+              width={120}
+              height={32}
+              className="h-12 w-auto"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </Link>
         </div>
-      </main>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative w-full max-w-7xl mx-auto px-4">
+        <div className="relative">
+          <Image
+            src={bannerImage}
+            alt="Fitness banner"
+            className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[90vh] object-cover rounded-2xl"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+          />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+          {/* Content */}
+          <div className="absolute inset-0 flex items-center justify-center px-4">
+            <div className="text-center max-w-4xl z-10">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight drop-shadow-lg">
+                Your Ultimate Fitness Companion
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-4 sm:mb-6 md:mb-8 font-normal max-w-3xl mx-auto drop-shadow-md">
+                Track your progress, discover new exercises, and stay motivated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-8 sm:py-12 md:py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-6 text-center">
+            Achieve Your Fitness Goals
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-6 sm:mb-8 md:mb-12 font-normal max-w-4xl mx-auto text-center">
+            Our app provides you with the tools and support you need to reach
+            your fitness aspirations. Whether you&apos;re a beginner or a
+            seasoned athlete, we&apos;ve got you covered.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {/* Card 1 */}
+            <div className="glassmorphism rounded-2xl p-4 sm:p-6 md:p-8 hover:bg-white/10 hover:backdrop-blur-3xl hover:border-white/25 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+                💪
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
+                Train With Me
+              </h3>
+              <p className="text-white font-normal leading-relaxed text-xs sm:text-sm md:text-base">
+                Follow programs I&apos;ve designed — and do alongside you.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="glassmorphism rounded-2xl p-4 sm:p-6 md:p-8 hover:bg-white/10 hover:backdrop-blur-3xl hover:border-white/25 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+                🥗
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
+                Eat Smart
+              </h3>
+              <p className="text-white font-normal leading-relaxed text-xs sm:text-sm md:text-base">
+                Calorie-counted recipes, no strict meal plans.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="glassmorphism rounded-2xl p-4 sm:p-6 md:p-8 hover:bg-white/10 hover:backdrop-blur-3xl hover:border-white/25 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+                🧘‍♀️
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
+                Learn & Grow
+              </h3>
+              <p className="text-white font-normal leading-relaxed text-xs sm:text-sm md:text-base">
+                Quick lessons on fitness, food, and mindset.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="glassmorphism rounded-2xl p-4 sm:p-6 md:p-8 hover:bg-white/10 hover:backdrop-blur-3xl hover:border-white/25 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
+                💬
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">
+                Find Your Community
+              </h3>
+              <p className="text-white font-normal leading-relaxed text-xs sm:text-sm md:text-base">
+                Join real women making real progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-6 sm:py-8 px-4 border-t border-white/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-4">
+            <Link
+              href="/terms"
+              className="text-white hover:text-[#FEC3DB] transition-colors text-sm sm:text-base"
+            >
+              Terms and Conditions
+            </Link>
+            <Link
+              href="/privacy"
+              className="text-white hover:text-[#FEC3DB] transition-colors text-sm sm:text-base"
+            >
+              Privacy
+            </Link>
+            <a
+              href="mailto:sweatchiofficial@gmail.com?subject=General%20Inquiry"
+              className="text-white hover:text-[#FEC3DB] transition-colors text-sm sm:text-base"
+            >
+              Contact Us
+            </a>
+          </div>
+          <p className="text-white text-xs sm:text-sm">© 2024 Sweatchi</p>
+        </div>
+      </footer>
     </div>
   );
 }
