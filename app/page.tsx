@@ -138,7 +138,9 @@ export default function Home() {
               Contact Us
             </a>
           </div>
-          <p className="text-white text-xs sm:text-sm">© 2024 Sweatchi</p>
+          <p className="text-white text-xs sm:text-sm">
+            © {new Date().getFullYear()} Sweatchi
+          </p>
         </div>
       </footer>
     </div>
