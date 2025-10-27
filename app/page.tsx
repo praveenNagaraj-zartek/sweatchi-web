@@ -131,12 +131,12 @@ export default function Home() {
             >
               Privacy
             </Link>
-            <a
-              href="mailto:sweatchiofficial@gmail.com?subject=General%20Inquiry"
+            <Link
+              href="/contact"
               className="text-white hover:text-[#FEC3DB] transition-colors text-sm sm:text-base"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
           <p className="text-white text-xs sm:text-sm">
             © {new Date().getFullYear()} Sweatchi

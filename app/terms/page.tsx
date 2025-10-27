@@ -1,6 +1,8 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import logoImage from '../assets/logo.png';
+import { createMailLink } from '../utils/mail-redirect';
 
 export default function Terms() {
   return (
@@ -201,7 +203,11 @@ export default function Terms() {
                 We are here to help. If you wish to contact us for any reason,
                 please email us at{' '}
                 <a
-                  href="mailto:sweatchiofficial@gmail.com"
+                  {...createMailLink(
+                    'sweatchiofficial@gmail.com',
+                    'General Inquiry',
+                    'Hello Sweatchi Team,\n\n'
+                  )}
                   className="text-[#FEC3DB] hover:text-[#E56197] transition-colors"
                 >
                   sweatchiofficial@gmail.com

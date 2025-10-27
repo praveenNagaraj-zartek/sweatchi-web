@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import logoImage from '../assets/logo.png';
+import { createMailLink } from '../utils/mail-redirect';
 
 export default function Privacy() {
   return (
@@ -40,7 +43,11 @@ export default function Privacy() {
               California Consumer Privacy Act (&quot;CCPA&quot;) the data
               controller is Spicestorm Inc. with email address{' '}
               <a
-                href="mailto:sweatchiofficial@gmail.com?subject=Privacy%20Inquiry"
+                {...createMailLink(
+                  'sweatchiofficial@gmail.com',
+                  'Privacy Inquiry',
+                  'Hello Sweatchi Team,\n\n'
+                )}
                 className="text-[#FEC3DB] hover:text-[#E56197] transition-colors"
               >
                 sweatchiofficial@gmail.com
@@ -399,7 +406,11 @@ export default function Privacy() {
                 If you wish to exercise one or more of the above rights, please
                 contact us with your request at{' '}
                 <a
-                  href="mailto:sweatchiofficial@gmail.com?subject=Data%20Rights%20Request"
+                  {...createMailLink(
+                    'sweatchiofficial@gmail.com',
+                    'Data Rights Request',
+                    'Hello Sweatchi Team,\n\n'
+                  )}
                   className="text-[#FEC3DB] hover:text-[#E56197] transition-colors"
                 >
                   sweatchiofficial@gmail.com
@@ -418,7 +429,11 @@ export default function Privacy() {
                 We are here to help. If you wish to contact us for any reason,
                 please email us at{' '}
                 <a
-                  href="mailto:sweatchiofficial@gmail.com?subject=General%20Inquiry"
+                  {...createMailLink(
+                    'sweatchiofficial@gmail.com',
+                    'General Inquiry',
+                    'Hello Sweatchi Team,\n\n'
+                  )}
                   className="text-[#FEC3DB] hover:text-[#E56197] transition-colors"
                 >
                   sweatchiofficial@gmail.com
