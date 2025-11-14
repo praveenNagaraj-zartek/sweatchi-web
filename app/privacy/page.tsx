@@ -56,6 +56,87 @@ export default function Privacy() {
             </p>
 
             <section className="mb-8">
+              <p className="text-white leading-relaxed mb-6">
+                Sweatchi is a women-only fitness app designed to help you move
+                with purpose, nourish your mind and body, and celebrate every
+                step of your transformation.
+              </p>
+
+              <p className="text-white leading-relaxed mb-6">
+                Created by Saachi, who has lived the journey and understands
+                what it truly takes to transform the right way, Sweatchi brings
+                together expert workout programs, personalized nutrition and
+                meal guides, and powerful mindset tools — all in one empowering
+                space.
+              </p>
+
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+                What You&apos;ll Love
+              </h3>
+              <ul className="list-disc list-inside text-white leading-relaxed mb-6 space-y-2">
+                <li>Workouts designed specifically for women</li>
+                <li>Simple, sustainable nutrition and meal guidance</li>
+                <li>Progress tracking to keep you consistent and motivated</li>
+                <li>
+                  Step, water, and sleep tracking — key pillars of your wellness
+                  journey
+                </li>
+                <li>A positive, supportive community that lifts you up</li>
+              </ul>
+
+              <p className="text-white leading-relaxed mb-6">
+                Your transformation starts here.
+              </p>
+
+              <p className="text-white leading-relaxed mb-6">
+                Train. Transform. Thrive with Sweatchi.
+              </p>
+
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+                Premium Content
+              </h3>
+              <p className="text-white leading-relaxed mb-6">
+                Access premium fitness plans, meal guides, and advanced tracking
+                features available through in-app purchases and auto-renewable
+                subscriptions.
+              </p>
+
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+                Subscription Information
+              </h3>
+              <ul className="list-disc list-inside text-white leading-relaxed mb-6 space-y-2">
+                <li>
+                  Sweatchi Premium – Monthly or yearly auto-renewable
+                  subscription
+                </li>
+                <li>
+                  Manage or cancel your subscription anytime in your App Store
+                  account settings.
+                </li>
+                <li>
+                  Payment will be charged to your Apple ID account at
+                  confirmation of purchase.
+                </li>
+                <li>
+                  Subscription automatically renews unless canceled at least 24
+                  hours before the end of the current period.
+                </li>
+              </ul>
+
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+                Medical Disclaimer
+              </h3>
+              <p className="text-white leading-relaxed mb-6">
+                This app is not a substitute for professional medical advice,
+                diagnosis, or treatment. Always seek the advice of your
+                physician or other qualified health provider with any questions
+                you may have regarding a medical condition. Do not disregard or
+                delay seeking professional medical advice because of information
+                provided by this app.
+              </p>
+            </section>
+
+            <section className="mb-8">
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
                 Information covered by this Privacy Policy
               </h2>
