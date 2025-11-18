@@ -134,6 +134,66 @@ export default function Privacy() {
                 delay seeking professional medical advice because of information
                 provided by this app.
               </p>
+
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+                TERMS OF USE (EULA)
+              </h3>
+              <p className="text-white leading-relaxed mb-4">
+                These Terms of Use apply to your use of Sweatchi.
+              </p>
+              <p className="text-white leading-relaxed mb-4">
+                By downloading or using Sweatchi, you agree to comply with this
+                Licensed Application End User License Agreement (the &quot;Standard
+                EULA&quot;), provided by Apple.
+              </p>
+              <p className="text-white leading-relaxed mb-4">
+                Apps made available through the App Store are licensed, not sold,
+                to you. Your license to use Sweatchi is subject to this Standard
+                EULA. For the full Standard EULA, please visit:
+              </p>
+              <p className="text-white leading-relaxed mb-4">
+                ➡{' '}
+                <a
+                  href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                  className="text-[#FEC3DB] hover:text-[#E56197] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+                </a>
+              </p>
+              <h4 className="text-base sm:text-lg font-bold text-white mb-3">
+                Important EULA Highlights:
+              </h4>
+              <ul className="list-disc list-inside text-white leading-relaxed mb-6 space-y-2">
+                <li>
+                  You are granted a limited, non-transferable license to use the
+                  app on Apple-branded devices you own or control.
+                </li>
+                <li>
+                  You must not copy, reverse-engineer, modify, or redistribute
+                  the app.
+                </li>
+                <li>
+                  Sweatchi may use anonymous technical analytics data to improve
+                  the app.
+                </li>
+                <li>
+                  Use of external services within the app is at your sole risk.
+                </li>
+                <li>
+                  Sweatchi and related services are provided &quot;as-is&quot; without
+                  warranties to the maximum extent permitted by law.
+                </li>
+                <li>
+                  Liability of the licensor is limited to the amount paid by you,
+                  up to USD $50.
+                </li>
+                <li>
+                  Governing law follows the Standard Apple EULA, depending on
+                  your residence.
+                </li>
+              </ul>
             </section>
 
             <section className="mb-8">
