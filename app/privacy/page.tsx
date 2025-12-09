@@ -3,8 +3,8 @@ import Link from 'next/link';
 import logoImage from '../assets/logo.png';
 import { fetchPageContent } from '../utils/fetch-page-content';
 
-// ISR: Revalidate every hour
-export const revalidate = 3600;
+// // ISR: Revalidate every hour
+// export const revalidate = 3600;
 
 export default async function Privacy() {
   const pageContent = await fetchPageContent('privacy');

@@ -4,7 +4,7 @@ import logoImage from '../assets/logo.png';
 import { fetchPageContent } from '../utils/fetch-page-content';
 
 // ISR: Revalidate every hour
-export const revalidate = 3600;
+// export const revalidate = 3600;
 
 export default async function Terms() {
   const pageContent = await fetchPageContent('terms');
