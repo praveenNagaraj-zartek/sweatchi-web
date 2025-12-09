@@ -63,3 +63,93 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(225, 172, 193, 0.3);
 }
+
+/* Styles for API content HTML */
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.prose p {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.75rem;
+}
+
+.prose ol,
+.prose ul {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.75rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose a {
+  color: #fec3db;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #e56197;
+}
+
+.prose strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.prose th {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+}
